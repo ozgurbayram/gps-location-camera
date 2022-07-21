@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+#header {
+    height: 60px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+#header .logo h2 {
+    font-weight: 400;
+}
+#header .menu li{
+    display: inline-block
+}
+
+#header .menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#header .menu li a:hover{
+    background-color: #eee;
+}
+
+.image-list {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.image-list::-webkit-scrollbar{
+    display: none;
+}
+
+.image-list li img{
+    width: 256px;
+    margin: 10px;
+} 
+
+.back {
+    font-size: 32px;
+    color: #333;
+}
+
+.back-link:hover {
+    background-origin: #eee;
+}
+
+.message{
+    margin-top: 20px;
+}
+
+.info h2 {
+    font-weight: 400;
+}
+
+.google-play img{
+    height: 100px;
+}
+
+.info h3 {
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .container{
+        width: 100%;
+    }
+    #header {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .info{
+        margin: 10px;
+    }
+}
